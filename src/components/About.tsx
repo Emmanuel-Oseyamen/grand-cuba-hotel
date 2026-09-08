@@ -45,7 +45,7 @@ export default function About() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-black md:text-5xl">
-            Welcome to Grand Cuba Hotel & Suites
+            Welcome to Grand Cuba Hotel
           </h2>
 
           <h3 className="mt-5 text-xl font-medium text-slate-700">
@@ -53,7 +53,7 @@ export default function About() {
           </h3>
 
           <p className="mt-8 text-lg leading-8 text-slate-600">
-            Grand Cuba Hotel & Suites combines refined elegance,
+            Grand Cuba Hotel combines refined elegance,
             exceptional hospitality, and modern comfort to create
             memorable experiences for every guest. Every space has
             been thoughtfully designed to provide relaxation,
