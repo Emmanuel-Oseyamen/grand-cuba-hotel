@@ -61,12 +61,12 @@ export default function Hero() {
             style={{
               filter:
                 index === 0
-                  ? "brightness(.78) blur(2px) contrast(1.08)"
+                  ? "none"
                   : "brightness(.82) contrast(1.12) saturate(1.08)",
               willChange: "opacity, transform",
             }}
           >
-            <Image
+            Image
               src={image}
               alt=""
               fill
