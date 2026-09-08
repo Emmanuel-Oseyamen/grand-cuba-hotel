@@ -9,7 +9,7 @@ const rooms = [
   {
     name: "Deluxe Room",
     price: "From ₦25,000",
-    image: "/rooms/room1.png",
+    image: "/rooms/room-1.png",
     description:
       "Elegant accommodation featuring a king-size bed, premium bathroom, complimentary breakfast and high-speed WiFi for a truly relaxing stay.",
     features: ["King Bed", "Free WiFi", "Breakfast"],
@@ -17,7 +17,7 @@ const rooms = [
   {
     name: "Executive Room",
     price: "From ₦30,000",
-    image: "/rooms/room2.png",
+    image: "/rooms/room-2.png",
     description:
       "Spacious executive accommodation with refined interiors, smart entertainment, dedicated workspace and personalized hospitality.",
     features: ["Workspace", "Smart TV", "Room Service"],

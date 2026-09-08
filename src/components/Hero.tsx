@@ -7,7 +7,7 @@ import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
 const slides = [
-  "/hero.png",
+  "/hero1.png",
   "/hero2.png",
   "/hero3.png",
   "/hero4.png",
