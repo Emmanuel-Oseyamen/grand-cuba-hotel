@@ -74,7 +74,7 @@ export default function Hero() {
               loading="eager"
               sizes="100vw"
               className="object-cover object-center"
-            />
+          />
           </motion.div>
         ))}
       </div>
