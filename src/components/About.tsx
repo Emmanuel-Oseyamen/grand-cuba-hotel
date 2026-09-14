@@ -21,7 +21,7 @@ export default function About() {
           <div className="overflow-hidden rounded-3xl shadow-2xl">
 
             <Image
-              src="/aboutt.png"
+              src="/about.png"
               alt="Grand Cuba Hotel"
               width={700}
               height={900}
