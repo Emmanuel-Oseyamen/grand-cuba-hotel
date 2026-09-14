@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -31,13 +30,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
 
-      {/* ================================================= */}
-      {/* HERO IMAGES                                      */}
-      {/* All slides remain mounted so images can load     */}
-      {/* ahead of time, preventing loading delays during  */}
-      {/* transitions.                                     */}
-      {/* ================================================= */}
-
+      {/* HERO IMAGES */}
       <div className="absolute inset-0">
         {slides.map((image, index) => (
           <motion.div
@@ -66,7 +59,7 @@ export default function Hero() {
               willChange: "opacity, transform",
             }}
           >
-            Image
+            <Image
               src={image}
               alt=""
               fill
@@ -74,38 +67,28 @@ export default function Hero() {
               loading="eager"
               sizes="100vw"
               className="object-cover object-center"
-          />
+            />
           </motion.div>
         ))}
       </div>
 
-      {/* ================================================= */}
-      {/* OVERLAYS                                          */}
-      {/* ================================================= */}
-
-      {/* Main Overlay */}
+      {/* MAIN OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/20" />
 
-      {/* Bottom Fade */}
+      {/* BOTTOM FADE */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
 
-      {/* Luxury Vignette */}
+      {/* LUXURY VIGNETTE */}
       <div className="absolute inset-0 shadow-[inset_0_0_220px_rgba(0,0,0,.55)]" />
 
-      {/* Grain */}
+      {/* GRAIN */}
       <div className="pointer-events-none absolute inset-0 bg-[url('/grain.png')] opacity-[0.05] mix-blend-overlay" />
 
-      {/* ================================================= */}
-      {/* CONTENT                                           */}
-      {/* ================================================= */}
-
+      {/* CONTENT */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-end px-5 pb-20 sm:px-6 sm:pb-24">
         <div className="w-full">
 
-          {/* ================================================= */}
-          {/* FIRST SLIDE                                      */}
-          {/* ================================================= */}
-
+          {/* FIRST SLIDE */}
           <AnimatePresence mode="wait">
             {current === 0 && (
               <motion.div
@@ -127,7 +110,6 @@ export default function Hero() {
                   ease: "easeOut",
                 }}
               >
-
                 <p className="text-xs uppercase tracking-[5px] text-[#D4A373] sm:text-sm sm:tracking-[8px]">
                   Luxury Hospitality
                 </p>
@@ -140,9 +122,8 @@ export default function Hero() {
                   Hotel
                 </h2>
 
-                {/* Buttons */}
+                {/* BUTTONS */}
                 <div className="mt-8 flex flex-col gap-3 sm:mt-12 sm:flex-row sm:flex-wrap sm:gap-5">
-
                   <a
                     href="#contact"
                     className="inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#D4A373] px-8 py-3.5 font-semibold text-black transition hover:-translate-y-1 sm:px-9 sm:py-4"
@@ -156,12 +137,10 @@ export default function Hero() {
                   >
                     Explore Rooms
                   </a>
-
                 </div>
 
-                {/* Features */}
+                {/* FEATURES */}
                 <div className="mt-8 flex max-w-2xl flex-wrap gap-x-3 gap-y-2 text-[10px] uppercase tracking-[2px] text-white/75 sm:mt-12 sm:gap-4 sm:text-xs sm:tracking-[3px]">
-
                   <span>Luxury Rooms</span>
 
                   <span className="text-[#D4A373]">•</span>
@@ -175,17 +154,12 @@ export default function Hero() {
                   <span className="text-[#D4A373]">•</span>
 
                   <span>24/7 Concierge</span>
-
                 </div>
-
               </motion.div>
             )}
           </AnimatePresence>
 
-          {/* ================================================= */}
-          {/* LAST SLIDE                                       */}
-          {/* ================================================= */}
-
+          {/* LAST SLIDE */}
           <AnimatePresence mode="wait">
             {current === slides.length - 1 && (
               <motion.div
@@ -208,7 +182,6 @@ export default function Hero() {
                 }}
                 className="max-w-xl"
               >
-
                 <h2 className="text-4xl font-light text-white sm:text-5xl">
                   Your Next Stay
                 </h2>
@@ -223,7 +196,6 @@ export default function Hero() {
                 >
                   Reserve Today
                 </a>
-
               </motion.div>
             )}
           </AnimatePresence>
@@ -231,10 +203,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ================================================= */}
-      {/* SCROLL INDICATOR                                  */}
-      {/* ================================================= */}
-
+      {/* SCROLL INDICATOR */}
       <motion.div
         animate={{
           y: [0, 8, 0],
